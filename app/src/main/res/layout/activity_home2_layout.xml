@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#888" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <net.fkm.bottomtabtest.view.widget.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <net.fkm.bottomtabtest.view.widget.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@drawable/comui_tab_home"
+            app:tabIconSelected="@drawable/comui_tab_home_selected"
+            app:tabText="首页"
+            app:tabTextSize="13sp"
+            app:textColorNormal="@color/comui_tab"
+            app:textColorSelected="@color/comui_tab_selected" />
+
+        <net.fkm.bottomtabtest.view.widget.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@drawable/comui_tab_message"
+            app:tabIconSelected="@drawable/comui_tab_message_selected"
+            app:tabText="消息"
+            app:tabTextSize="13sp"
+            app:textColorNormal="@color/comui_tab"
+            app:textColorSelected="@color/comui_tab_selected" />
+
+        <net.fkm.bottomtabtest.view.widget.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:tabIconNormal="@drawable/comui_tab_person"
+            app:tabIconSelected="@drawable/comui_tab_person_selected"
+            app:tabText="我的"
+            app:tabTextSize="13sp"
+            app:textColorNormal="@color/comui_tab"
+            app:textColorSelected="@color/comui_tab_selected" />
+
+    </net.fkm.bottomtabtest.view.widget.AlphaTabsIndicator>
+
+</LinearLayout>
